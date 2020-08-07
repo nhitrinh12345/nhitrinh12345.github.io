@@ -15,10 +15,32 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">	
 	
 <link href="CSS/style.css" rel="stylesheet" type="text/css">	
+	<style>
+	
+		#mybtn{
+			position: fixed;
+			display: none;
+			z-index: 999999;
+			cursor: pointer;
+			bottom: 20px;
+			right: 30px;
+			border: none;
+			outline: none;
+			width: 80px;
+		}
+	
+	</style>
 	
 </head>
 
+	
+
+	
 <body>
+<!--ONCLICK-->
+	
+	<button onClick="topFunction()" id="mybtn"	title="On Top" type="button" class="btn btn-secondary">Click</button>
+	
 	
 	<!--Menu Line-->
 <nav class="navbar navbar-light bg-light static-top">
@@ -28,56 +50,51 @@
     </div>
 </nav>	
 	
+
+	
+
 	
 	<!--BANNER-->
-<section class="nen-banner container-fluid p-0" height="60%" width="100%">
- <div class="carousel-inner text-center">
- <div class="carousel-item active text-center"> 
+<header class="nen-banner container-fluid p-0">
+ <div id="nen-banner-goc">
 	 
-	<div class="row text-center">
-		<div class="col-lg-12 col-md-12">
-			<img src="Img/bg-masthead.jpg" alt="s1" height="60%" width="100%">
-		</div>
-	</div>		   
-	
-	<div class="carousel-caption text-center">
-	 <div class="row text-center">
-			<div class="col-12 col-xl-9 mx-auto">
+     <div class="overlay"></div>
+          
+	 <div class="row banner-1 text-center">
+		    
+			<div class="col-12 col-xl-7 mx-auto p-5">
 			 	<h1 class="mp-5 text-white">Build a landing page for your business or project and generate more leads!</h1>
 		    </div>
 			
-		    <div class="col-md-12 col-lg-12 col-xl-8 mx-auto">
+		    <div class="col-md-12 col-lg-8 col-xl-6 col-sm-12 mx-auto">
 					<form class="form">
-					<div class="form-group mx-auto mt-4 no-gutters">
+					<div class="form-group mx-auto">
 					   <div class="row">
-						<div class="col-lg-9 col-md-9">
+						<div class="col-lg-9 col-md-9 col-sm-12">
 							<label for="inputEnter your email" class="sr-only">Enter your email...</label>
-							<input type="email" class="form-control form-control-lg" id="inputEnter your email" placeholder="Enter your email...">
+							<input type="email" class="form-control form-control-lg" id="input Enter your email" placeholder="Enter your email...">
 					    </div>
 					  
-						<div class="col-lg-3 col-md-3">
+						<div class="col-lg-3 col-md-3 col-sm-12">
 					    	<button type="submit" class="btn btn-lg btn-block btn-primary">Sign up!</button>
 						</div>
 					  </div> 
 					</div>	  
 					</form>  
 			</div>
-		   
-		</div>
-		</div> 
 	 
- </div>	 
- </div>		
-</section>
+    </div>	 
+ </div>
+</header>
 	
 	
 	<!--ICON ITEM-->
 <section class="icon-item bg-light text-center p-0">
-	<div class="col-12 col-xl-8 mx-auto">
+	<div class="col-md-12 col-xl-8 col-sm-12 mx-auto">
     <div class="container-fluid">
       <div class="row">
 		  
-        <div class="row-icon-item col-lg-4 col-md-4 col-xl-4 mt-5 mb-5">
+        <div class="row-icon-item col-lg-4 col-md-4 col-xl-4 col-sm-12 mt-5 mb-5">
           <div class="icon-item-1 mx-auto mb-5">
             <div class="icon-item-1 d-flex">
               <i class="fas fa-desktop fa-4x text-primary mx-auto mb-4"></i>
@@ -87,7 +104,7 @@
           </div>
         </div>
 		  
-        <div class="row-icon-item col-lg-4 col-md-4 col-xl-4 mt-5 mb-5">
+        <div class="row-icon-item col-lg-4 col-md-4 col-xl-4 col-sm-12 mt-5 mb-5">
           <div class="icon-item-2 mx-auto mb-5">
             <div class="icon-item-2 d-flex">
               <i class="fas fa-layer-group fa-4x text-primary mx-auto mb-4"></i>
@@ -97,7 +114,7 @@
           </div>
         </div>
 		  
-        <div class="row-icon-item col-lg-4 col-md-4 col-xl-4 mt-5 mb-5">
+        <div class="row-icon-item col-lg-4 col-md-4 col-xl-4 col-sm-12 mt-5 mb-5">
           <div class="icon-item-3 mx-auto mb-0 mb-lg-3">
             <div class="icon-item-3 d-flex">
               <i class="far fa-check-circle fa-4x text-primary mx-auto mb-4"></i>
@@ -172,38 +189,38 @@
 
 	<!--IMAGE ITEM-->
 <section class="image-item bg-light text-center p-0">
-	<div class="col-12 col-xl-10 mx-auto">
+	<div class="col-12 col-xl-9 col-sm-12 mx-auto">
     <div class="container-fluid">
       
-		<div class="row">
-		  <div class="row-icon-item col-lg-12 col-md-12 col-xl-12 mt-5">
+		<div class="row image-item-row">
+		  <div class="row-icon-item col-lg-12 col-md-12 col-xl-12 col-sm-12 mt-5">
 			<h2 class="text-center">What people are saying...</h2>	
 		  </div>
 			  
-        <div class="row-image-item col-lg-4 col-md-4 col-xl-4">
+        <div class="row-image-item col-lg-4 col-md-4 col-xl-4 col-sm-12">
           <div class="image-item-1 mx-auto">
             <div class="image-item-1">
-              <img src="Img/testimonials-1.jpg" alt="" class="rounded-circle" width="50%" height="50%">
+              <img src="Img/testimonials-1.jpg" alt="" class="rounded-circle" width="60%" height="60%">
             </div>
             <h5 class="mt-4">Margaret E.</h5>
             <p class="lead mb-0">"This is fantastic! Thanks so much guys!"</p>
           </div>
         </div>
 		  
-        <div class="row-image-item col-lg-4 col-md-4 col-xl-4 mt-0 mb-5">
+        <div class="row-image-item col-lg-4 col-md-4 col-xl-4 col-sm-12 mt-0 mb-5">
           <div class="image-item-2 mx-auto">
             <div class="image-item-2">
-              <img src="Img/testimonials-2.jpg" alt="" class="rounded-circle" width="50%" height="50%">
+              <img src="Img/testimonials-2.jpg" alt="" class="rounded-circle" width="60%" height="60%">
             </div>
             <h5 class="mt-4">Fred S.</h5>
             <p class="lead mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
           </div>
         </div>
 		  
-        <div class="row-image-item col-lg-4 col-md-4 col-xl-4 mt-0 mb-5">
+        <div class="row-image-item col-lg-4 col-md-4 col-xl-4 col-sm-12 mt-0 mb-5">
           <div class="image-item-3 mx-auto">
             <div class="image-item-3">
-              <img src="Img/testimonials-3.jpg" alt="" class="rounded-circle" width="50%" height="50%">
+              <img src="Img/testimonials-3.jpg" alt="" class="rounded-circle" width="60%" height="60%">
             </div>
             <h5 class="mt-4">Sarah W.</h5>
             <p class="lead mb-0">"Thanks so much for making these free resources available to us!"</p>
@@ -218,29 +235,24 @@
 	
 	
 	<!--FOOTER-TOP-->
-<section class="nen-footer container-fluid p-0" height="40%" width="100%">
- <div class="carousel-inner text-center">
- <div class="carousel-item active text-center"> 
+<section class="nen-footer container-fluid p-0">
+ <div id="footer-page-goc">
 	 
-	<div class="row text-center">
-		<div class="col-lg-12 col-md-12">
-			<img src="Img/bg-masthead.jpg" alt="s1" height="40%" width="100%">
-		</div>
-	</div>		   
-	
-	<div class="carousel-caption text-center">
-	 <div class="row text-center">
-			<div class="col-12 col-xl-9 mx-auto">
+     <div class="overlay"></div>
+          
+	 <div class="row banner-1 text-center">
+		    
+			<div class="col-12 col-xl-8 mx-auto">
 			 	<h2 class="mp-5 text-white">Ready to get started? Sign up now!</h2>
 		    </div>
 			
-		    <div class="col-md-12 col-lg-12 col-xl-8 mx-auto">
+		    <div class="col-md-12 col-lg-8 col-xl-6 mx-auto">
 					<form class="form">
 					<div class="form-group mx-auto mt-4 no-gutters">
 					   <div class="row">
 						<div class="col-lg-9 col-md-9">
 							<label for="inputEnter your email" class="sr-only">Enter your email...</label>
-							<input type="email" class="form-control form-control-lg" id="input Enter your email" placeholder="Enter your email...">
+							<input type="email" class="form-control form-control-lg" id="inputEnter your email..." placeholder="Enter your email...">
 					    </div>
 					  
 						<div class="col-lg-3 col-md-3">
@@ -250,12 +262,8 @@
 					</div>	  
 					</form>  
 			</div>
-		   
-		</div>
-		</div> 
-	 
- </div>	 
- </div>		
+    </div>	 
+ </div>
 </section>
 	
 	
@@ -309,6 +317,31 @@
     </div>
     </div>
   </footer>
+		
+	
+<script>
+	
+    //Get the button
+    var mybutton = document.getElementById("mybtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    
+	</script>	
 	
 </body>
 </html>
